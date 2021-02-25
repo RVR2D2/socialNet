@@ -15,3 +15,8 @@
     color: white;
 }
 
+.headerAuthor {
+    display: flex;
+    justify-content: center;
+}
+

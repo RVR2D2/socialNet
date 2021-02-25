@@ -4,6 +4,8 @@ import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
     return <header className={s.header}>
+
+
         <img src='https://www.freelogodesign.org/Content/img/logo-ex-7.png' />
 
         <div className={s.loginBlock}>
@@ -11,6 +13,7 @@ const Header = (props) => {
                 ? <div>{props.login} - <button onClick={props.logout}>Log out</button> </div>
                 : <NavLink to={'/login'}>Login</NavLink> }
         </div>
+        <div className={s.headerAuthor}>Copyright © Vadim Redkin 2021 </div>
     </header>
 }
 
